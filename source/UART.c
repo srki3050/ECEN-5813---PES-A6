@@ -1,8 +1,8 @@
 /* Name  		: Sricharan Kidambi S
  * File  		: uart.c
  * Date	 		: 04/06/2022
- * Brief 		: System clock (24MHz) generation.
- * References	: UART configuration to create and Interrupt Based Approach.
+ * Brief 		: UART configuration and to create and Interrupt Based Approach.
+ * References	: Dean ch 8 programming with UART serial Communication
  */
 #include "UART.h"
 #include "stddef.h"
@@ -78,6 +78,11 @@ void UART0_IRQHandler(void){
 	}
 
 }
+/*
+ * System called function on calling anything to STDOUt (printf, puts);
+ * Enqueues to transmission buffer
+ * Returns - 0 if enqueued successfully, -1 otherwise
+ */
 int __sys_write(int handle, char *buf, int size){
 	if(buf == NULL)
 		return -1;
@@ -93,7 +98,11 @@ int __sys_write(int handle, char *buf, int size){
 	}
 	return 0;
 }
-
+/*
+ * System called function on calling anything to STDOUt (scanf, gets);
+ * dequeues from receiver buffer
+ * Returns - the dequeued character if dequeued successfully, -1 otherwise
+ */
 int __sys_readc(void){
 	char ch;
 	while(bufferempty(&cb_RX) == 1);

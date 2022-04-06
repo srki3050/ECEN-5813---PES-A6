@@ -5,12 +5,10 @@
  * References	: Initialize the functions, such as baud rate of UART module, the main loop performing
  * 				  The command processing based on the character being typed.
  */
+#include "app.h"
 #include "sysclock.h"
 #include "UART.h"
 #include "stdio.h"
-#include "command_processor.h"
-#include "cbfifo.h"
-#include "test_cbfifo.h"
 
 #define REQUIRED_BAUD_RATE 38400
 int main(void)
@@ -21,17 +19,7 @@ int main(void)
   printf("Welcome to Breakfast Serial\r\n");
   char name[MAX_SIZE];	//Store the incoming string in this Buffer.
   while(1){
-	  char c = getchar();
-	  if(c == '?'){
-		  printf("%c ",c);
-		  accumulate(name);
-		  printf("\r\n");
-		  process_command(name);
-	  }
-	  else{
-		  putchar(c);
-		  printf("\r\n");
-	  }
+	  command_processor(name);
   }
   return 0 ;
 }

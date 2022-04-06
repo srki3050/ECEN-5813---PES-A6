@@ -1,4 +1,8 @@
-command_processor.c:22:13:handle_author	16	static
-command_processor.c:26:13:handle_hexdump	16	static
-command_processor.c:30:6:process_command	88	static
-command_processor.c:70:7:accumulate	288	static
+command_processor.c:63:13:handle_author	16	static
+command_processor.c:67:13:handle_hexdump	16	static
+command_processor.c:71:13:handle_help	24	static
+command_processor.c:76:13:handle_other	16	static
+command_processor.c:79:13:parse_data	24	static
+command_processor.c:88:13:print_unknown_command	24	static
+command_processor.c:101:6:process_command	80	static
+command_processor.c:137:7:accumulate	288	static

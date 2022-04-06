@@ -9,7 +9,11 @@
 #define HEXDUMP_H_
 #include "stdint.h"
 #include "stddef.h"
+#include "string.h"
+#include "stdio.h"
+#include "stdlib.h"
+#include "ctype.h"
 
-char *hexdump(char *start,char *len);
+void hexdump(char* address, char* length);
 
 #endif /* HEXDUMP_H_ */

@@ -5,6 +5,7 @@
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
 ../source/UART.c \
+../source/app.c \
 ../source/cbfifo.c \
 ../source/command_processor.c \
 ../source/hexdump.c \
@@ -16,6 +17,7 @@ C_SRCS += \
 
 OBJS += \
 ./source/UART.o \
+./source/app.o \
 ./source/cbfifo.o \
 ./source/command_processor.o \
 ./source/hexdump.o \
@@ -27,6 +29,7 @@ OBJS += \
 
 C_DEPS += \
 ./source/UART.d \
+./source/app.d \
 ./source/cbfifo.d \
 ./source/command_processor.d \
 ./source/hexdump.d \
