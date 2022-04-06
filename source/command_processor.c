@@ -137,7 +137,7 @@ void process_command(char *input){
 char *accumulate(char *name){
   char ch;
   int i = 0;
-  char backup_buffer[256];
+  char backup_buffer[MAX_SIZE];
 	while(ch != 0x0D){
 		while(bufferempty(&cb_RX) == 1);
 		dequeue(&cb_RX,&ch,1);
@@ -156,6 +156,6 @@ char *accumulate(char *name){
 		putchar(ch);
 	}
 	backup_buffer[i] = '\0';
-	__builtin_memcpy(name,backup_buffer,256);
+	__builtin_memcpy(name,backup_buffer,sizeof(backup_buffer));
 	return (char *)name;
 }
