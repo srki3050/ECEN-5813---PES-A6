@@ -31,3 +31,11 @@ UART .c/.h
 //app.c/.h
 
 Initialize the functions and write the essesntial characteristics of main while loop.
+
+Test Screenshots
+Testing Basic Connection Parameters
+![image](https://user-images.githubusercontent.com/89497188/162071366-ea0ce808-0711-4d93-859c-9e7b0ea91d07.png)
+Testing Expected Results
+![image](https://user-images.githubusercontent.com/89497188/162071490-db222719-3749-4cda-9637-9735cb0d95d1.png)
+Testing Scalability Results
+![image](https://user-images.githubusercontent.com/89497188/162071557-f047346d-adaa-4322-adbf-0ffa2c1a5447.png)
