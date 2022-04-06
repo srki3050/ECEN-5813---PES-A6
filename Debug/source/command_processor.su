@@ -1,0 +1,4 @@
+command_processor.c:22:13:handle_author	16	static
+command_processor.c:26:13:handle_hexdump	16	static
+command_processor.c:30:6:process_command	88	static
+command_processor.c:70:7:accumulate	288	static
