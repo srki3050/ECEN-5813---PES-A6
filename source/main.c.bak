@@ -1,5 +1,5 @@
 /* Name  		: Sricharan Kidambi S
- * File  		: main.c
+ * File  		: uart.c
  * Date	 		: 04/06/2022
  * Brief 		: Application Entry Point
  * References	: Initialize the functions, such as baud rate of UART module, the main loop performing
