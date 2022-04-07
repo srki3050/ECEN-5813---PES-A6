@@ -36,6 +36,6 @@ Test Screenshots
 Testing Basic Connection Parameters
 ![image](https://user-images.githubusercontent.com/89497188/162071366-ea0ce808-0711-4d93-859c-9e7b0ea91d07.png)
 Testing Expected Results
-![image](https://user-images.githubusercontent.com/89497188/162071490-db222719-3749-4cda-9637-9735cb0d95d1.png)
+![image](https://user-images.githubusercontent.com/89497188/162103775-ee144c65-5cb0-4206-8b8d-bdec525da1b7.png)
 Testing Scalability Results
 ![image](https://user-images.githubusercontent.com/89497188/162071557-f047346d-adaa-4322-adbf-0ffa2c1a5447.png)
