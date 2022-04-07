@@ -52,7 +52,7 @@ static void parse_data(int argc,char *argv[]);
 static void print_unknown_command(int argc,char *argv[]);
 
 static const command_table_t commands[] = {
-		{"author",handle_author,"Author Prints the name of the Author's name\r\n"},
+		{"author",handle_author,"\r\nAuthor Prints the name of the Author's name\r\n"},
 		{"dump",handle_hexdump,"prints the hexdump functionality if a legal start address and length is specified\r\n"},
 		{"help",handle_help,"prints the description of all the possible commands entered\r\n"},
 		{"other",handle_other,"Just to check whether command table is scalable\r\n"},
